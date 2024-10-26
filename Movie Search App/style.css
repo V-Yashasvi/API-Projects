@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#789DBC;
+    width: 100vw;
+}
+#nav-text{
+    /* border: 2px solid blue; */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 1700;
+    font-style: bold;
+    font-size: 2em;
+}
+.top-nav{
+    background-color: #FFE3E3;
+    height: 70px;;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    /* border: 2px solid brown; */
+    /* padding: 0 50px 0 50px; */
+    /* */
+}
+#input{
+    width: 30em;
+    height: 2em;
+    background-color: #e9ffef;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 20px 20px 20px 50px;
+}
+#SearchBtn{
+    height: 40px;
+    width: 70px;
+    background-color: #C9E9D2;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+#SearchBtn:hover{
+    background-color: #d8efde;
+}
+button[type="submit"]:hover{
+    background-color: #a11b59;
+    cursor: pointer;
+}
+.movie-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 40px;
+    margin: 10px,auto;
+    padding: 20px;
+    place-items: center;
+    overflow: hidden;
+}
+.movieDiv{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: #635d5d;
+    border-radius: 5%;
+    cursor: pointer;
+    max-width: 300px;
+    height: 500px;
+    padding: 20px;
+}
