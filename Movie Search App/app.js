@@ -2,7 +2,9 @@ let movieContainer=document.querySelector('.movie-container');
 let searchBox=document.querySelector('.input');
 let searchBtn=document.querySelector('.SearchBtn');
 
+
 const fetchMovie= async (query)=>{
+    // let inputVal=searchBox.value
     movieContainer.innerHTML="Fetching Movie..........s";
     const data=await fetch(`https://www.omdbapi.com/?apikey=72b9f53e&s=${query}`)
     const response=await data.json();
@@ -29,5 +31,5 @@ const fetchMovie= async (query)=>{
 searchBtn.addEventListener('click',(e)=>{
     e.preventDefault();
     let SearchInp=searchBox.value.trim();
-    fetchMovie();
+    fetchMovie(SearchInp);
 })

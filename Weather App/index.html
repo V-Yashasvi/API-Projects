@@ -1,65 +1,44 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <div class="search-box">
-                <input type="text" class="input-box" placeholder="Enter your location">
-                <button><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-        </div>
-        <div class="weather-body">
-            <img src="./assets/Weather App/assets/cloud.png" alt="weather img" class="weather-img">
-        </div>
-        <div class="weather-box">
-            <p class="temperature">0<sup>°C</sup></p>
-        </div>
-    </div>
-    
-    <script src="https://kit.fontawesome.com/0d2a0fb65a.js" crossorigin="anonymous"></script> 
-    <script src="./app.js"></script>
-</body>
-</html> -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    
-    <div class="search-box">
-        <input type="text" class="input-box" placeholder="Enter your location">
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-    </div>
-
-    <div id="info">
-        <p id="data"></p>
-        <h3></h3>
-    </div>
-    <div id="description">
-
-    </div>
-    <div id="temperature"></div>
-
-    <div id="extrainfo">
-        <div class="info">
-            <h5></h5>
-            <p id="tempMax">
-                
-            </p>
+    <div class="container">
+        <div class="search-box">
+            <input id="search-bar" type="text" placeholder="london">
+            <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
         </div>
+        <div class="weather">
+            <img class="weather-icon" src="./assets/Weather App/assets/clear.png" alt="">   
+            <h2 class="city">London</h2>
+            <h1 class="temp">22°c</h1>
+        </div>
+        <div class="details">
+            <div class="col">
+                <img src="./assets/Weather App/assets/humidity.png" alt="">
+                <div>
+                    <p class="humidity">50%</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="col">
+                <img src="./assets/Weather App/assets/wind.png" alt="">
+                <div>
+                    <p class="wind">15km/h</p>
+                    <p>Windspeed</p>
+                </div>
+            </div>
+        </div>
+
     </div>
 
+
+
+    <script src="https://kit.fontawesome.com/0d2a0fb65a.js" crossorigin="anonymous"></script>
     <script src="./app.js"></script>
 </body>
 </html>

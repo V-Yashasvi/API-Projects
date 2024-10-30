@@ -13,8 +13,8 @@ paymentBtn.addEventListener('click',()=>{
 
     // postPayment.appendChild(statusDiv);
 
-    window.location.href='./next.html'
-    statusDiv.style.backgroundColor='red'
+    window.location.href='./next.html';
+
 
     statusDiv.className='processing';
     statusDiv.innerText='Processing.....';
